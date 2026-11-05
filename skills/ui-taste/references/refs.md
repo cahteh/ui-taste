@@ -30,3 +30,7 @@ Damir Sokolovsky's finished screens are in the original skill at https://github.
 ---
 
 Adapted by Carter Long from unslop by Damir Sokolovsky ([@heydamir](https://x.com/heydamir)), CC BY 4.0. Keep this credit in copies and adaptations.
+
+## New concept reference intake — November 5, 2026
+
+See the [Folio reference kit](../../../planning/folio/2026-11-05/README.md) for three UI images, two motion videos, component links, proposed applications, and design-rule conflicts. These are candidates for consideration, not automatic replacements for Founders tokens or the baseline screens above.

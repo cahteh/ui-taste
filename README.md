@@ -47,3 +47,9 @@ The scripts need Node and Playwright, and `story.mjs` also needs ffmpeg.
 ## License
 
 CC BY 4.0, see `LICENSE`. Credit both Carter Long and Damir Sokolovsky in copies and adaptations. The Vermeer is public domain. Folio screenshots show synthetic sample data.
+
+## Folio concept planning and new references
+
+The [November 5, 2026 reference kit](planning/folio/2026-11-05/README.md) contains Carter's new UI images, motion videos, library links, concept brief, and a Claude handoff. The collection separates owner instructions, direct observations, and suggestions. Existing Founders rules and baseline references remain intact.
+
+Third-party reference assets retain their respective rights; the repository's skill license does not relicense them.
