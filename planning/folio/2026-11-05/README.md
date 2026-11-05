@@ -1,3 +1,5 @@
+> Latest direction: read [Meta-first update](direction-update-meta-first.md). Earlier UI images are archival, not design targets; Meta is the first marketing integration.
+
 # Folio UI reference kit
 
 Collected November 5, 2026 for Carter Long. This is reference intake and concept planning, not a finalized design or implementation specification.

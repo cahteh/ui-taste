@@ -1,3 +1,5 @@
+> Latest direction: read [Meta-first update](direction-update-meta-first.md). Earlier UI images are archival, not design targets; Meta is the first marketing integration.
+
 # Paste into Claude
 
 We are planning UI and demonstrable concept workflows for the claritysoftware.ai revamp and Folio. Read this kit's folio-concept-brief.md, reference-index.md, suggested-direction.md, and the original assets before proposing work. In the ui-taste repo this kit is under planning/folio/2026-11-05/.

@@ -1,3 +1,5 @@
+> Latest direction: read [Meta-first update](direction-update-meta-first.md). Earlier UI images are archival, not design targets; Meta is the first marketing integration.
+
 # Suggested direction — for discussion
 
 ## A coherent Founders experience
