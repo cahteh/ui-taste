@@ -35,11 +35,13 @@ Work like a designer doing a redline pass, one layer at a time, across the whole
 1. **Look at the screen.** Find the files that render it, run it and take a screenshot, so you judge what people see and not only the code.
    - Only a link to a live site? `node <skill folder>/scripts/snapshot.mjs <url> taste/original.html` saves the page and a screenshot (`--dark` or `--light` to match the theme). Work on a copy.
    - Only a screenshot? Rebuild it as one static HTML file and treat that as the original.
+   - Only source you cannot render, like a canvas board? Judge from the markup and styles, say so in the report, and mark criteria you could not judge from code (detail intensity, image quality) as estimates.
+   - A screen with many states, like Settings sections or tabs: score the default state, read the others for patterns, and name any state that scores much worse.
 2. **Score it.** Score the screen with [references/rubric.md](references/rubric.md). Note one line of evidence per criterion and apply the scale cap. This is the baseline.
 3. **Audit.** Go through [references/signs.md](references/signs.md) and list every sign you find, one line each with where it lives.
 4. **Decide how much to change.**
-   - **Heavy**, many signs across color, type, icons and copy: run the full process.
-   - **Light**, mostly designed with a few signs left: polish mode. Fix only what the audit found and keep the palette, type, layout and visual. Bigger ideas go into the report as suggestions.
+   - **Heavy**, signs in four or more of the sign groups, or any of gradients, glows or emoji in the chrome: run the full process.
+   - **Light**, signs in three groups or fewer, mostly subtractions: polish mode. Fix only what the audit found and keep the palette, type, layout and visual. Bigger ideas go into the report as suggestions.
    - **None**: say so plainly and suggest two or three refinements with exact values. Apply them only if the user agrees. Never change a good screen just to make it different.
 5. **Set the direction and stop.** Write the five lines below, show the score, the audit and the direction, and wait for the user before editing. If you have a tool for asking questions, use it. Skip the wait only when the user said to just do it.
 6. **Fix in nine passes, in order.** Finish a pass across the whole screen before the next. Spacing first, because everything reads differently once the rhythm is right. Copy before type and layout, because its length sets size and placement. Visuals and motion last.
@@ -66,9 +68,12 @@ For Folio the direction is fixed, so restate it rather than invent one:
 - **Moments.** The Today figures, the pipeline, the schedule's now line, the painting on sign-in.
 - **Signature.** The yellow Lab dot, and framed panels with a hairline.
 
+Utility screens like Settings, forms and lists may have no rich moment. There the moment is precision: perfect alignment, one control height, and the signature where it belongs.
+
 ## 1. Spacing
 
-- Everything sits on a 4px grid. A 2px step is fine for nudges inside small controls.
+- Everything sits on a 4px grid. Paddings like 14, 18 or 22 are off the grid and count as defects. A 2px step is fine only for nudges inside small controls, and an odd value that exactly centers something stays.
+- Controls share heights: 32 in dense panels and the top bar, 36 for primary form controls, 40 to 44 on touch.
 - Same thing, same size. Rows in a list share one height and gap, cards in a row share one padding.
 - Space shows grouping. Space inside a group is smaller than space between groups.
 - Things line up. Icons in one column, labels on one line, numbers right aligned in one column.
@@ -95,8 +100,10 @@ For Folio the direction is fixed, so restate it rather than invent one:
 ## 4. Copy
 
 - Bare. Cut every line that explains the interface to the person using it: subtitles under titles, helper notes under fields, empty-state paragraphs, "Tip:" boxes. If a control needs a sentence to be understood, fix the control.
-- No page title that repeats the breadcrumb. Today keeps its date and greeting, because they are content, not a title.
+- No page title that repeats the breadcrumb, and no panel title that repeats the section name. Today keeps its date and plain greeting (`Good morning, Carter`), because they are content, not a title; the greeting sign in signs.md is about chatty ones with emoji and exclamation marks.
 - Labels short and in sentence case. `Search`, not `Search anything...`.
+- What may stay: a real constraint (`8 characters or more`), a consequence the person must know before acting (`Deletes 42 contacts`), and one line saying what an unfamiliar Lab feature does. Nothing else explains the interface.
+- A status is a dot plus a short label, never a dot alone.
 - A change says what it compares to, like `+12% vs last month`.
 - No exclamation marks, no trailing periods on labels and buttons, no hype words, no `AI-powered`.
 - Lab and preview features are marked with the yellow dot or a small `Preview` tag, never with `Beta 🚀` or `New ✨`.
@@ -137,6 +144,7 @@ For Folio the direction is fixed, so restate it rather than invent one:
 - Decorative filler goes: blobs, orbs, nebulas, glowing grids, robots.
 - App screens almost never need generated images. Their moments come from the product itself.
 - When a screen needs a picture (sign-in, empty states, a client hero), prefer a public-domain painting or a real photograph from the world over a generated scene. Credit the work on screen, quietly. How Folio picks and credits paintings is in [references/visuals.md](references/visuals.md).
+- Code treatments for an image, like a duotone or glyphs, are in [references/effects.md](references/effects.md); use one only when it fits.
 - Look at [references/refs.md](references/refs.md) before this pass. Take qualities from the references, never their subject or layout.
 
 ## 9. Motion

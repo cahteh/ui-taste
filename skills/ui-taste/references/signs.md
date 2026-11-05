@@ -6,6 +6,10 @@ Go through every group and note each sign you find with where it lives. Each lin
 
 - A callout box, tip, banner or info panel explaining the screen → remove, fix the control that needed explaining
 - A subtitle under a page or panel title → remove
+- A panel title that repeats the section or breadcrumb → remove or name what is inside
+- Several Save buttons in one view, or different labels for the same action → one save per view, one label
+- Read-only values styled like editable fields → plain text
+- A status dot with no label → dot plus a short label
 - Helper text under form fields that restates the label → remove, keep only a real constraint like a format or limit
 - Empty-state paragraphs → one short line, or the action itself
 - A page title that repeats the breadcrumb → remove the title
@@ -58,7 +62,7 @@ Go through every group and note each sign you find with where it lives. Each lin
 
 ## Copy
 
-- Greeting headlines, like `Welcome back, Damir! 👋` → the page or period as the title
+- Chatty greeting headlines, like `Welcome back, Damir! 👋` → the page or period as the title. A plain greeting under the date on a home screen, like Folio's Today, may stay
 - Exclamation marks and `!!` → plain statement
 - Changes without a reference, like `+12%!!` or `3 less!!` → `+12% vs last month`, `3 fewer vs last month`
 - Wordy placeholders, like `Search anything...` → `Search`

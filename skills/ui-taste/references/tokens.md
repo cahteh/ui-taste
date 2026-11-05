@@ -24,17 +24,23 @@ Source of truth: `src/themes/founders.ts` and `src/themes/index.ts` in the Folio
 | navInk | #b4b4bd | #45454f | nav labels |
 | muted | #8a8a95 | #5f5f6c | meta, icons |
 | dim | #5a5a64 | #9a9aa6 | disabled, faint marks |
+| inkHi | #ffffff | #000000 | rare emphasis on figures |
+| frameHi | #33333a | #bfbfcb | panel frame on hover or focus |
+| scrim | rgba(8,8,10,0.45) | rgba(20,20,28,0.35) | behind sheets and dialogs |
 | green | #7fc29b | #287855 | positive |
 | red | #e88f8f | #b44343 | negative |
 | tintBg | #141a26 | #e8eefc | accent-tinted surface |
 | tintLine | #26324a | #c9d6f5 | accent-tinted border |
 
-- **Accent:** Clarity blue `#87a7f5` with `accentInk` #141414 (dark text on blue) in dark, white in light. The workspace owner may pick another accent; views read it from the theme.
+- **Accent:** Clarity blue `#87a7f5` with `accentInk` #141414 (dark text on blue) in dark, white in light. In light mode the theme derives a darker shade with `lightAccent()` and picks white or dark ink for text on it by contrast; `accentTint()` gives the tinted surface. All in `src/themes/accent.ts`. The workspace owner may pick another accent; views read it from the theme.
 - **Lab dot:** `#f2c94c` in dark, `#c99a06` in light.
 - **Radius:** panel 12, control 8, chip 6.
 - **Icons:** Phosphor paths from `src/shell/icons.ts`, one size and weight, colored by text role.
 - **Type:** Instrument Sans for everything, weights 400 and 500, 600 rarely. `font-variant-numeric: tabular-nums` on every number. No monospace, no serif.
 - **Shell:** sidebar with the workspace switcher, Search with a keycap, flat groups split by rules, Lab items with the yellow dot, the person at the bottom. Top bar with the sidebar toggle, breadcrumb, Ask Folio with its keycap, planner, help and notifications.
+- **Type scale (target):** 11 for the smallest meta, 12 meta, 13 secondary and table cells, 14 body and nav, 15 to 16 panel titles, 22 to 28 figures and the Today greeting. Line heights 16, 18, 20.
+- **Control heights (target):** 32 dense and top bar, 36 form controls, 40 to 44 touch.
+- As of 2026-11-05 the build still uses many sizes from 7 to 10.5px and control heights of 28, 30 and 38. Those are findings for the spacing and type passes, not values to copy.
 - **Shadow:** only on floating layers (menus, sheets): `0 12px 32px rgba(0,0,0,0.45)` dark, `0 12px 32px rgba(32,32,41,0.14)` light.
 - **Motion:** hover and color changes 140 to 160ms ease-out; panels, sheets and slides 200 to 220ms `cubic-bezier(0.2, 0.7, 0.2, 1)`; one-time draw-ins up to 900ms. Everything has a reduced-motion version.
 

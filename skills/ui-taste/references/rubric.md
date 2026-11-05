@@ -28,6 +28,10 @@ Score each criterion 0 to 4.
 
 Write one line of evidence for each score: what you saw and where. A score with no evidence does not count.
 
+Scores are calibrated low on purpose. All 2s give a pillar of 25 and all 3s give 56, so read pillars like this: under 30 template or worse, 30 to 50 careful, 50 to 70 clearly designed, over 70 rare.
+
+**Template cap.** Run the template check from SKILL.md. If the screen would still fit another product with the name swapped, cap T4, T5, R3 and V3 at 2.
+
 Each pillar is the product of its two halves, each half the mean of its criteria, normalised to 0 to 100: `pillar = (mean(first) / 4) × (mean(second) / 4) × 100`. Report all three pillars and their mean as the overall score.
 
 ## Scale cap
@@ -88,7 +92,7 @@ Harmony is the order that holds the temperature together.
 
 ## Content: value
 
-**V1 Warrant.** Does it live up to its promise, given its purpose, context and cost? Every element earns its place. Count lines that explain the interface, callouts, subtitles and helper notes; each one lowers this. On Folio, three or more cap V1 at 1.
+**V1 Warrant.** Does it live up to its promise, given its purpose, context and cost? Every element earns its place. Count lines that explain the interface: callouts, subtitles, helper notes, panel titles that repeat the section. Real constraints, consequences and one line for an unfamiliar Lab feature do not count (see Copy in SKILL.md). On Folio, three to five such lines cap V1 at 2, six or more at 1.
 
 **V2 Contribution.** Does the screen move the person's work forward, or only report on it? Actions next to the thing they act on.
 
